@@ -1,6 +1,6 @@
 import React from 'react'
 import { SidebarGroup, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem } from '../ui/sidebar'
-import { Calendar, ChevronDown, Home, Inbox, Search, Settings } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 import Link from 'next/link'
 import { sidebarLinks } from '@/constants'
 import { Collapsible, CollapsibleContent } from '../ui/collapsible'
