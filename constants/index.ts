@@ -83,3 +83,24 @@ export const sidebarLinks = [
     ]
   }
 ]
+
+export const industryOptions = [
+  { value: "technology", label: "Technology" },
+  { value: "healthcare", label: "Healthcare" },
+  { value: "finance", label: "Finance" },
+  { value: "education", label: "Education" },
+  { value: "retail", label: "Retail" },
+  { value: "real-estate", label: "Real Estate" },
+  { value: "travel", label: "Travel" },
+  { value: "food-and-beverage", label: "Food & Beverage" },
+  { value: "automotive", label: "Automotive" },
+  { value: "entertainment", label: "Entertainment" },
+]
+
+export const brandToneOptions = [
+  { value: "Friendly", label: "Friendly" },
+  { value: "Professional", label: "Professional" },
+  { value: "Casual", label: "Casual" },
+  { value: "Formal", label: "Formal" },
+  { value: "Bold", label: "Bold" },
+]

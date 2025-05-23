@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import { getLoggedInUser } from '@/appwrite/auth'
 import { redirect } from 'next/navigation';
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
+import { SidebarInset, SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import AppSidebar from '@/components/shared/AppSidebar';
 import { cookies } from 'next/headers';
 
@@ -15,10 +15,12 @@ const DashboardLayout = async ({ children }: { children: ReactNode }) => {
     return (
         <SidebarProvider defaultOpen={defaultOpen}>
             <AppSidebar />
-            <main className="">
-                <SidebarTrigger />
-                {children}
-            </main>
+            <SidebarInset className='py-[10px] px-[20px]'>
+                <main className="">
+                    <SidebarTrigger />
+                    {children}
+                </main>
+            </SidebarInset>
         </SidebarProvider>
     )
 }
